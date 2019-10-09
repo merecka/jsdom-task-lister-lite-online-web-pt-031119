@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   		}
 
   		delete_button.addEventListener("click", removeItem)
-  		e.target.reset() // clears the form after submitting it
+  		e.currentTarget.reset() // clears the form after submitting it
    	});
 
 });
