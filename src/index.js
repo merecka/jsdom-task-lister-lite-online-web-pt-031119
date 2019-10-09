@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // your code here
+ 
   let form_variable = document.getElementById("create-task-form");
   let task_desc_field = document.querySelector("#new-task-description");
   let tasks_list = document.getElementById("tasks");
@@ -13,7 +13,11 @@ document.addEventListener("DOMContentLoaded", () => {
   		delete_button.innerHTML = "Delete"
   		new_task.appendChild(delete_button)
 
-  		delete_button.addEventListener("click", )
+  		function removeItem() {
+  			tasks_list.removeChild(new_task) // removes individual tasks from tasks list
+  		}
+
+  		delete_button.addEventListener("click", removeItem)
   		e.target.reset() // clears the form after submitting it
    	});
 
