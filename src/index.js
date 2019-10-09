@@ -9,9 +9,12 @@ document.addEventListener("DOMContentLoaded", () => {
   		const new_task = document.createElement('li')
   		new_task.innerText = task_desc_field.value
   		tasks_list.appendChild(new_task)
-  		e.task_desc_field.reset()
-  		e.form_variable.reset()
-  		form_variable.reset()
+  		let delete_button = document.createElement("BUTTON")
+  		delete_button.innerHTML = "Delete"
+  		new_task.appendChild(delete_button)
+
+  		delete_button.addEventListener("click", )
+  		e.target.reset() // clears the form after submitting it
    	});
-  form_variable.reset()
+
 });
